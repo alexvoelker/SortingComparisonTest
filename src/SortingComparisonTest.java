@@ -4,8 +4,8 @@ import java.util.concurrent.Executors;
 
 public class SortingComparisonTest {
     public static void main(String[] args) {
-//        comparisonTest(1000);
-        testSort(1000);
+        comparisonTest(1_000_000);
+//        testSort(1000);
     }
 
     /** Test if the sorting algorithm was properly implemented.
@@ -65,7 +65,7 @@ public class SortingComparisonTest {
             while (!threadPool.isTerminated()) {}
 
             // Print the sorting time output
-            System.out.printf("| %1$-12d | %2$14d | %3$13d | %4$12d | %5$12d |\n",
+            System.out.printf("| N: %1$-9d | %2$12dms | %3$11dms | %4$10dms | %5$10dms |\n",
                     size, selectionSort.sortTime, bubbleSort.sortTime, mergeSort.sortTime, quickSort.sortTime);
             System.out.println("+--------------+----------------+---------------+--------------+--------------+");
 
