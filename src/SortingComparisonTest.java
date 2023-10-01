@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 public class SortingComparisonTest {
     public static void main(String[] args) {
 //        comparisonTest(1000);
-        testSort(10);
+        testSort(1000);
     }
 
     /** Test if the sorting algorithm was properly implemented.
