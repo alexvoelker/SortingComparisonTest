@@ -4,7 +4,7 @@ import java.util.concurrent.Executors;
 
 public class SortingComparisonTest {
     public static void main(String[] args) {
-        comparisonTest(1_000_000);
+        comparisonTest(1_000_000, 10);
 //        testSort(1000);
     }
 
@@ -35,7 +35,7 @@ public class SortingComparisonTest {
     /** A multithreaded program to perform multiple different
      *  types of sorting algorithms at once.
      */
-    public static void comparisonTest(int maxSize) {
+    public static void comparisonTest(int maxSize, double incrementFactor) {
 
         System.out.println("+--------------+----------------+---------------+--------------+--------------+");
         System.out.println("|  Array Size  | Insertion Sort |  Bubble Sort  |  Merge Sort  |  Quick Sort  |");
@@ -69,7 +69,7 @@ public class SortingComparisonTest {
                     size, selectionSort.sortTime, bubbleSort.sortTime, mergeSort.sortTime, quickSort.sortTime);
             System.out.println("+--------------+----------------+---------------+--------------+--------------+");
 
-            size *= 10;
+            size *= incrementFactor;
         }
     }
     public static int[] generateRandomData(int n) {
