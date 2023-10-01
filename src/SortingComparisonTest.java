@@ -8,6 +8,8 @@ public class SortingComparisonTest {
         testSort(10);
     }
 
+    /** Test if the sorting algorithm was properly implemented.
+     * */
     public static void testSort(int num) {
         SelectionSort testSelectionSort = new SelectionSort(generateRandomData(num));
         testSelectionSort.run();

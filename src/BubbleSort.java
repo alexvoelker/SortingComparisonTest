@@ -24,8 +24,8 @@ class BubbleSort implements Runnable {
             for (j = 0; j < data.length - i - 1; j++) {
                 if (data[j] > data[j + 1]) {
                     temp = data[j];
-                    data[j] = data[i];
-                    data[i] = temp;
+                    data[j] = data[j + 1];
+                    data[j + 1] = temp;
                     wasSwapped = true;
                 }
             }
