@@ -16,7 +16,6 @@ class BubbleSort implements Runnable {
     private synchronized void sort() {
         long start = System.currentTimeMillis();
 
-        //      Sorting algorithm here
         boolean wasSwapped;
         int temp, i, j;
         for (i = 0; i < data.length; i++) {

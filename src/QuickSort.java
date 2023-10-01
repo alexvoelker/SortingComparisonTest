@@ -16,7 +16,7 @@ class QuickSort implements Runnable {
     private synchronized void sort() {
         long start = System.currentTimeMillis();
 
-//            Sorting algorithm here
+
 
         this.sortTime = System.currentTimeMillis() - start;
     }

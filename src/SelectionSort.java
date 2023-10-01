@@ -16,8 +16,6 @@ class SelectionSort implements Runnable {
     private synchronized void sort() {
         long start = System.currentTimeMillis();
 
-        //      Sorting algorithm here
-
         for (int i = 0; i < data.length; i++) {
             for (int j = i; j < data.length; j++) {
                 if (data[i] > data[j]) {
